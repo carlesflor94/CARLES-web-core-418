@@ -66,6 +66,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 24px 24px;
 }
 
 .menu nav ul {
@@ -80,13 +81,37 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header--left {
+    display: flex;
+    gap: 12px;
 }
 
 
 /*web navigation style*/
 
+.web-navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
 
 /*contact style*/
 
+.contact__icons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
 
 /*language navigation style*/
+
+.language ul {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
