@@ -62,13 +62,25 @@ a {
 .menu {
     max-width: 320px;
     width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-nav ul {
+.menu nav ul {
     list-style: none;
 }
 
+
+
 /*header menu style*/
+
+.top__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 /*web navigation style*/
