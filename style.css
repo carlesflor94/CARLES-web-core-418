@@ -1,3 +1,5 @@
+/*font*/
+
 @font-face {
     font-family: 'TT Lakes Neue Trial';
     src: url(font/tt_lakes_neue/TT-Lakes-Neue-Trial-Regular.ttf);
@@ -19,6 +21,16 @@
 }
 
 
+/*root*/
+
+:root {
+    --pink-logo: #ff3e79;
+    --grey: #7e7e82;
+    --black-links: #1B1C21;
+}
+
+
+
 body {
     font-family: 'TT Lakes Neue Trial', sans-serif;
     font-weight: 400;
@@ -33,12 +45,12 @@ body {
 a {
     text-decoration: none;
     font-weight: 500;
-    color: #1B1C21;
+    color: var(--black-links);
 }
 
 .web-navigation--selected,
 .language--selected {
-    color: #7e7e82;
+    color: var(--grey);
 }
 
 
@@ -109,6 +121,19 @@ a {
     text-shadow: 0px 2.5px 3px #ada5a5;
 }
 
+.web-navigation a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.web-navigation a:hover {
+    transform: translateX(20px);
+    border-left: solid 4px var(--pink-logo);
+    padding-left: 10px;
+}
+
+
+
 /*contact style*/
 
 .contact__icons {
@@ -126,4 +151,9 @@ a {
     gap: 9px;
     padding: 0;
     margin: 0;
+}
+
+.language a:hover {
+    text-decoration: underline;
+    color: var(--pink-logo);
 }
