@@ -105,6 +105,11 @@ a {
 
 /*web navigation style*/
 
+.web-navigation {
+    padding-bottom: 50px;
+}
+
+
 .web-navigation ul {
     display: flex;
     flex-direction: column;
@@ -161,11 +166,3 @@ a {
 
 
 
-/*media Q*/
-
-
-@media (max-height: 700px) {
-    .web-navigation {
-        padding-bottom: 50px;
-    }
-}
